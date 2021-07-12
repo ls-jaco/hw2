@@ -1,23 +1,25 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px 0px;
     padding: 0;
     cursor: default;
     font-family: "Bebas Neue", sans-serif;
-  }
-  
-  a {
+}
+
+body.waiting * {
+    cursor: progress;
+}
+
+a {
     cursor: pointer;
     text-decoration: none;
-    color: #28466bc7;
-  }
-  
-  a:hover {
-    color: #12417ab0;
-  }
+}
 
-  
-  header {
+a:hover {
+    color: black;
+}
+
+header {
     background-image: url(../img/miles.jpg);
     background-size: cover;
     background-position: center;
@@ -28,16 +30,16 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-  }
-  
-  .titolo {
+}
+
+.titolo {
     color: white;
     font-size: 150px;
     letter-spacing: 4px;
     margin-right: 60px;
-  }
-  
-  .nav {
+}
+
+.nav {
     background-color: #28466bc7;
     position: fixed;
     color: white;
@@ -46,40 +48,40 @@
     top: 0;
     left: 0;
     right: 0;
-    font-size:30px;
+    font-size: 30px;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
-  }
-  
-  .mobile__nav {
+}
+
+.mobile__nav {
     display: none;
-  }
-  
-  #logo {
+}
+
+#logo {
     height: 50px;
     width: 200px;
-  }
-  
-  header::before {
-    content: '';
+}
+
+header::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .nav-link {
-    color:white;
-  }
-  
-  #links a {  
+}
+
+.nav-link {
+    color: white;
+}
+
+#links a {
     margin: 15px;
-  }
-  
-    section {
+}
+
+section {
     max-width: none;
     margin: 0 auto;
     display: flex;
@@ -89,50 +91,76 @@
     align-items: center;
     min-height: 220px;
     width: 100%;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Open Sans", sans-serif;
     padding-bottom: 150px;
-    padding-top: 150px;
-  }
+}
 
-  .input_container {
-    color: black;
-    margin-top: 50px;
+#ricerca {
+    margin: 150px 0 150px 0;
+    height: 80px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #cecece;
+    max-width: 640px;
+    background: white;
+    justify-content: center;
     display: flex;
-    width: 200px;
-    margin-bottom: 10px;
     align-items: center;
-    font-family: "Bebas Neue", sans-serif;
-  }
-  
-  .input_check {
-    margin-left: 15px;
-    margin-right: 15px;
-    outline: none;
-  }
-  
-  .input_check:focus {
-    border: 2px solid #28466bc7;
-  }
+    line-height: 24px;
+    border-radius: 100px;
+    flex-basis: 100%;
+    margin-left: 100px;
+}
 
-  .input_check:hover {
+.material-icons {
+    padding: 10px;
+    background: #28466bc7;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.material-icons:hover {
     cursor: pointer;
-  }
-  
-  .btn {
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
     background-color: #28466bc7;
     color: white;
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .btn:hover {
-    opacity: 1;
-  }
+}
 
-  footer {
+input[type="text"] {
+    width: 90%;
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 42px;
+}
+
+#container input[type="text"]:focus {
+    transition: all 0.7s ease;
+    background-color: #28466b52;
+}
+
+form {
+    margin-left: 20px;
+}
+
+footer {
     background-color: #28466bc7;
     padding: 25px;
     text-align: center;
@@ -140,5 +168,4 @@
     font-size: 30px;
     letter-spacing: 2px;
     word-spacing: 4px;
-  }
-  
+}

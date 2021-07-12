@@ -17,7 +17,7 @@ class TranscriptionController extends BaseController
 
         $solos_result = Solos::all();
 
-        if(session('id_session') != null) {
+        if (session('id_session') != null) {
             return view('transcriptions', [
                 'csrf_token' => csrf_token(),
                 'error' => '',
@@ -29,7 +29,8 @@ class TranscriptionController extends BaseController
         }
     }
 
-    public function download(Request $request){
+    public function download(Request $request)
+    {
 
         $solos_result = Solos::all();
 
@@ -40,20 +41,20 @@ class TranscriptionController extends BaseController
         $user = User::where('cf', session('id_session'))->first();
 
 
-        
-        if($user->tipo == 'Standard' && $user->n_downloads > 5){
+
+        if ($user->tipo == 'Standard' && $user->n_downloads > 5) {
             $error = "Hai superato il limite di download gratuiti. Per continuare a scaricare abbonati!";
         }
-        
-        
+
+
         if (empty($error)) {
-            
+
             $user->save();
-            
+
             $dl = Download::create([
                 'id_download',
-                'data_ora'=> $date,
-                'cf_utente'=>session('id_session'),
+                'data_ora' => $date,
+                'cf_utente' => session('id_session'),
                 'id_solo' => $request['id_solo']
             ]);
             $dl->save();
@@ -69,9 +70,8 @@ class TranscriptionController extends BaseController
                 ->header('Content-length', strlen($file_contents))
                 ->header('Content-Disposition', 'attachment; filename=' . $pdf->titolo_traccia)
                 ->header('Content-Transfer-Encoding', 'binary');
-        }else
-        {
-        return view('transcriptions')->with('csrf_token', csrf_token())->with('error', $error)->with('nome', $id_session->nome)->with('solos_result', $solos_result);
-    }
+        } else {
+            return view('transcriptions')->with('csrf_token', csrf_token())->with('error', $error)->with('nome', $id_session->nome)->with('solos_result', $solos_result);
+        }
     }
 }

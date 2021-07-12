@@ -33,11 +33,11 @@ class LoginController extends BaseController
 
         $user = User::where('email', request('email'))->first();
 
-        if(!isset($user)){
+        if (!isset($user)) {
             $error = "Utente not found.";
         }
 
-        if($user->password != md5(request('password'))){
+        if ($user->password != md5(request('password'))) {
             $error = "Password errata!";
         }
 

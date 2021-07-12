@@ -5,13 +5,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="{{ url('../resources/css/userpage.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/userpage.css')}}">
 
-    <script src="{{url('../resources/js/userpage.js')}}" defer="true"></script>
+    <script src="{{ asset('js/userpage.js') }}" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chango&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" href="{{ asset('img/minilogo.png')}}">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         </div>
 
         <nav class="nav">
-            <img id="logo" src="{{ url('../resources/img/logo.png')}}" />
+            <img id="logo" src="{{ asset('img/logo.png')}}" />
             <div id="links">
                 <a class="nav-link" href="{{url('home')}}">HOME</a>
                 <a class="nav-link" href="{{url('transcriptions')}}">TRANSCRIPTIONS</a>
@@ -69,7 +70,7 @@
             <a class="output_field" href="{{url('changePassword')}}">Modifica password</a>
         </div>
 
-            @if($tipo == 'Premium')
+        @if($tipo == 'Premium')
         <div class="output_container">
             <i class="material-icons"> delete_forever </i>
             <a class="output_field"><button id="myBtn">Disdici abbonamento</button></a>

@@ -33,15 +33,15 @@ class ChangePasswordController extends BaseController
 
 
 
-        if($old_password == $new_password){
+        if ($old_password == $new_password) {
             $error = "La nuova password è uguale a quella che si sta tentando di cambiare, riprovare.";
         }
 
-        if($new_password != $confirm_password){
+        if ($new_password != $confirm_password) {
             $error = "La conferma della password risulta errata, riprovare!";
         }
 
-        if($old_password != $id_session->password){
+        if ($old_password != $id_session->password) {
             $error = "Password errata, riprovare!";
         }
 
@@ -52,9 +52,8 @@ class ChangePasswordController extends BaseController
                 ->where('cf', $id_session->cf)
                 ->update(['password' => $new_password]);
             return redirect('userpage');
-        }
-        else {
+        } else {
             return view('changePassword')->with('csrf_token', csrf_token())->with('error', $error)->with('nome', $id_session->nome);
+        }
     }
-}
 }

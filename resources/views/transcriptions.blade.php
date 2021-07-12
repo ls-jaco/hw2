@@ -5,11 +5,12 @@
 <head>
   <meta charset="UTF-8" />
   <title>Sign Up</title>
-  <link rel="stylesheet" href="{{ url('../resources/css/transcriptions.css')}}">
-  <script src="{{url('../resources/js/transcriptions.js')}}" defer="true"></script>
+  <link rel="stylesheet" href="{{ asset('css/transcriptions.css')}}">
+  <script src="{{ asset('js/transcriptions.js') }}" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chango&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="{{ asset('img/minilogo.png')}}">
 
 </head>
 
@@ -20,7 +21,7 @@
     </div>
 
     <nav class="nav">
-      <img id="logo" src="{{ url('../resources/img/logo.png')}}" />
+      <img id="logo" src="{{ asset('img/logo.png')}}" />
       <div id="links">
         <a class="nav-link" href="{{url('home')}}">HOME</a>
         <a class="nav-link" href="{{url('transcriptions')}}">TRANSCRIPTIONS</a>

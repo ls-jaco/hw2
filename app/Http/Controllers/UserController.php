@@ -60,15 +60,15 @@ class UserController extends BaseController
                 ['giorni_rimanenti', '0'],
                 ['data_scadenza', $date]
             );
-            return view('userpage', [
-                'csrf_token', csrf_token(),
-                'error' => '',
-                'nome' => $id_session->nome,
-                'cognome' => $id_session->cognome,
-                'tipo' => $id_session->tipo,
-                'giorni_rimanenti' => 0,
-                'n_downloads' => $id_session->n_downloads,
-                'csrf_token' => csrf_token()
-            ]);
+        return view('userpage', [
+            'csrf_token', csrf_token(),
+            'error' => '',
+            'nome' => $id_session->nome,
+            'cognome' => $id_session->cognome,
+            'tipo' => $id_session->tipo,
+            'giorni_rimanenti' => 0,
+            'n_downloads' => $id_session->n_downloads,
+            'csrf_token' => csrf_token()
+        ]);
     }
 }

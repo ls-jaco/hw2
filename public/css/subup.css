@@ -1,21 +1,22 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px 0px;
     padding: 0;
     cursor: default;
     font-family: "Bebas Neue", sans-serif;
-  }
-  
-  a {
+}
+
+a {
     cursor: pointer;
     text-decoration: none;
-  }
-  
-  a:hover {
-    color: black;
-  }
-  
-  header {
+    color: #28466bc7;
+}
+
+a:hover {
+    color: #12417ab0;
+}
+
+header {
     background-image: url(../img/miles.jpg);
     background-size: cover;
     background-position: center;
@@ -26,16 +27,16 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-  }
-  
-  .titolo {
+}
+
+.titolo {
     color: white;
     font-size: 150px;
     letter-spacing: 4px;
     margin-right: 60px;
-  }
-  
-  .nav {
+}
+
+.nav {
     background-color: #28466bc7;
     position: fixed;
     color: white;
@@ -44,40 +45,40 @@
     top: 0;
     left: 0;
     right: 0;
-    font-size:30px;
+    font-size: 30px;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
-  }
+}
 
-  .mobile__nav {
+.mobile__nav {
     display: none;
-  }
+}
 
-  #logo {
+#logo {
     height: 50px;
     width: 200px;
-  }
-  
-  header::before {
-    content: '';
+}
+
+header::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
-  }
+}
 
-  .nav-link {
-    color:white;
-  }
+.nav-link {
+    color: white;
+}
 
-  #links a {  
+#links a {
     margin: 15px;
-  }
-  
-  section {
+}
+
+section {
     max-width: none;
     margin: 0 auto;
     display: flex;
@@ -85,79 +86,57 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+    min-height: 220px;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
     padding-bottom: 150px;
     padding-top: 150px;
-  }
+}
 
-  .contenuti {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    flex-wrap: wrap;
-  }
-
-  .blocco_contenuti {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 500px;
-    height: 500px;
-    margin-bottom: 150px;
-  }
-
-  .blocco_contenuti img {
-    height: 400px;
-    width: 400px;
-    box-shadow: 0 0 10px #000000;
-    border-radius: 10px;
-  }
-  
-  .blocco_contenuti h1 {
-    text-align: center;
-    font-size: 45px;
-    text-transform: uppercase;
-  }
-  
-  .blocco_contenuti p {
-    padding-top: 30px;
-    width: 30%;
+.input_container {
     color: black;
-    font-size: 30px;
-    line-height: 30px;
-    margin: auto;
-    font-family: Verdana, sans-serif;
-  }
-
-  .link-button {
-    margin: 0 auto;
-    background-color: white;
-    color:black;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 100px;
+    margin-top: 50px;
     display: flex;
+    width: 200px;
+    margin-bottom: 10px;
     align-items: center;
-    justify-content: space-around;
-    font-size: 50px;
-    padding: 0 20px 0 20px;
-  }
-  
-  .link-button:hover {
-    background: #28466bc7;
-    cursor: pointer;
-  }
-  
-  .link-button:focus {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.input_check {
+    margin-left: 15px;
+    margin-right: 15px;
     outline: none;
-  }
-  
-  
-  footer {
-    background-color: #28466B;
+}
+
+.input_check:focus {
+    border: 2px solid #28466bc7;
+}
+
+.input_check:hover {
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #28466bc7;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+footer {
+    background-color: #28466bc7;
     padding: 25px;
     text-align: center;
     color: white;
     font-size: 30px;
     letter-spacing: 2px;
     word-spacing: 4px;
-  }
+}
