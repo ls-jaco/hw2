@@ -1,0 +1,188 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 0;
+    cursor: default;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  header {
+    background-image: url(../img/miles.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .titolo {
+    color: white;
+    font-size: 150px;
+    letter-spacing: 4px;
+    margin-right: 60px;
+  }
+  
+  .nav {
+    background-color: #28466bc7;
+    position: fixed;
+    color: white;
+    display: flex;
+    padding: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size:30px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .mobile__nav {
+    display: none;
+  }
+  
+  #logo {
+    height: 50px;
+    width: 200px;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-link {
+    color:white;
+  }
+  
+  #links a {  
+    margin: 15px;
+  }
+  
+    section {
+    max-width: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 220px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+
+
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    align-items: center;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .material-icons {
+    padding: 10px;
+    background: #28466bc7;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+
+  .output_container{
+    display: flex;
+    width: 300px;
+    margin-bottom: 5px;
+
+  }
+
+  .output_field {
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    position: relative;
+    color: black;
+  }
+
+  a.output_field:hover {
+    color:#28466bc7;
+  }
+  
+  
+  .btn {
+    background-color: #28466bc7;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  footer {
+    background-color: #28466bc7;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  

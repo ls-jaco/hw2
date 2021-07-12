@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 0;
+    cursor: default;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  body.waiting * {
+    cursor: progress;
+}
+
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  header {
+    background-image: url(../img/miles.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .titolo {
+    color: white;
+    font-size: 150px;
+    letter-spacing: 4px;
+    margin-right: 60px;
+  }
+  
+  .nav {
+    background-color: #28466bc7;
+    position: fixed;
+    color: white;
+    display: flex;
+    padding: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size:30px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .mobile__nav {
+    display: none;
+  }
+  
+  #logo {
+    height: 50px;
+    width: 200px;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-link {
+    color:white;
+  }
+  
+  #links a {  
+    margin: 15px;
+  }
+  
+    section {
+    max-width: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 220px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 150px;
+  }
+
+  #ricerca {
+    margin: 150px 0 150px 0;
+    height: 80px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #cecece;
+    max-width: 640px;
+    background: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    border-radius: 100px;
+    flex-basis: 100%;
+    margin-left: 100px;
+  }
+
+  .material-icons {
+    padding: 10px;
+    background: #28466bc7;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+
+  .material-icons:hover{
+    cursor: pointer;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #28466bc7;
+    color: white;
+  }
+
+  
+  input[type=text] {
+    width: 90%;
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 42px;
+  }
+  
+  #container input[type=text]:focus {
+    transition: all 0.7s ease;
+    background-color: #28466b52;
+  }
+
+  form{
+    margin-left: 20px;
+  }
+
+
+  footer {
+    background-color: #28466bc7;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
